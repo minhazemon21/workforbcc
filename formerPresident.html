@@ -1,3 +1,469 @@
-<html>
-    <title>FP</title>
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" href="https://bdchessfed.com//public/images/logos/chess_logo.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<!-- CSRF Token -->
+<meta name="csrf-token" content="71BZgqSDSamESySVo4wNlP29gppIc6ZRTmp2v653">
+    
+    <title>Bangladesh Chess Federation</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bdchessfed.com//public/site/scss/common.css">
+        <link href="https://bdchessfed.com//public/gallery/jquery.fancybox.min.css" rel="stylesheet">
+
+    <style>
+    .figure-caption{
+        margin-top:15px !important;
+    }
+    .no-link{
+        color:#0D0A0A !important;
+    }
+
+    .no-link:hover,.no-link:active,.no-link:focus
+    {
+        text-decoration: none !important;
+    }
+    .slider .row .right .header-event {
+        background-color: #000a54;
+    }
+
+    .head .navbar .collapse .navbar-nav .dropdown .dropdown-content a {
+        color: white;
+        padding: 8px 10px;
+        border-top: 2px solid #fff;
+        text-decoration: none;
+        font-size: 13px;
+        display: block;
+    }
+
+    .news-content img, .top-news-content img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .slider .row .right .header-event h6{
+        font-size:16px !important;
+    }
+
+    .more-btn{
+        margin-top: 10px !important;
+    }
+
+    .arrow
+    {
+        padding-top: 20px;
+    }
+
+    .table-dark td{
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .table-dark th{
+        font-size: 14px;
+    }
+
+    @page  {
+        size: auto;
+    }
+</style>
+    
+
+    
+    <script>
+ </script>
+
+
+
+</head>
+<body>
+
+    <div class=" container head">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 img">
+           <a href="https://bdchessfed.com"> <img src="https://bdchessfed.com//public/images/defaults/header_image.jpeg" alt=""></a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md ">
+        <a href="https://bdchessfed.com">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn"><span>Federation</span>  <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="https://bdchessfed.com/president" class="dropmenu"><span>President</span></a>
+                            <a href="https://bdchessfed.com/executive-committee" class="dropmenu"><span>Executive Committee</span></a>
+                            <a href="https://bdchessfed.com/general-secretary" class="dropmenu"><span>General Secretary</span></a>
+                            <a href="https://bdchessfed.com/arbiters" class="dropmenu"><span>Arbiters</span></a>
+                            <a href="https://bdchessfed.com/trainers" class="dropmenu"><span>Trainers</span></a>
+
+                            <a href="https://bdchessfed.com/past-presidents" class="dropmenu"><span>Past Presidents</span></a>
+                            <a href="https://bdchessfed.com/past-general-secretaries" class="dropmenu"><span>Past Secretaries</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">Players  <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="https://bdchessfed.com/grand-masters" class="dropmenu"><span>Grand Masters</span></a>
+                            <a href="https://bdchessfed.com/ims-wims" class="dropmenu"><span>IM / WIM</span></a>
+                            <a href="https://bdchessfed.com/fm-wfm-cm-wcm" class="dropmenu"><span>FM / WFM / CM / WCM</span></a>
+                            <a href="https://bdchessfed.com/rating-list" class="dropmenu"><span>Rating List</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+
+
+
+
+
+
+
+
+
+
+
+                        <button class="dropbtn">Results  <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="https://bdchessfed.com/national-champions" class="dropmenu"><span>National Champions</span></a>
+                            <a href="https://bdchessfed.com/national-women-champions" class="dropmenu"><span>National Women Champions</span></a>
+                            <a href="https://bdchessfed.com/national-under-twenty-open" class="dropmenu"><span>National Under 20 (Open)</span></a>
+                            <a href="https://bdchessfed.com/national-under-twenty-girls" class="dropmenu"><span>National Under 20 Girls</span></a>
+                            <a href="https://bdchessfed.com/national-under-sixteen-open" class="dropmenu"><span>National Under 16 (Open)</span></a>
+                            <a href="https://bdchessfed.com/national-under-sixteen-girls" class="dropmenu"><span>National Under 16 Girls</span></a>
+                            <a href="https://bdchessfed.com/chess-league" class="dropmenu"><span>Chess League</span></a>
+                            <a href="https://bdchessfed.com/second-division-chess-league" class="dropmenu"><span>2<sup>nd</sup> Division Chess League</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">About <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="https://bdchessfed.com/bangladesh-chess-history" class="dropmenu"><span>Bangladesh Chess History</span></a>
+                            <a href="https://bdchessfed.com/laws-of-chess" class="dropmenu"><span>Laws of Chess</span></a>
+                            <a href="https://bdchessfed.com/benefits-of-chess" class="dropmenu"><span>Benefit of Chess</span></a>
+
+                            <a href="https://bdchessfed.com/chess-personalities" class="dropmenu"><span>Chess Personalities</span></a>
+                            <a href="https://bdchessfed.com/world-champions" class="dropmenu"><span>World Champions</span></a>
+                            <a href="https://bdchessfed.com/world-chess-history" class="dropmenu"><span>World Chess History</span></a>
+                            <a href="https://bdchessfed.com/contact" class="dropmenu"><span>Contact</span></a>
+                            <a href="https://bdchessfed.com/image-gallery" class="dropmenu"><span>Gallery</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown" style="height: 100%; margin-top: 5px;">
+                        <a href="https://bdchessfed.com/press-release">Press Release</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown" style="height: 100%; margin-top: 5px;">
+                        <a href="https://bdchessfed.com/live-game" >Live Games</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+            <div class="container slider">
+        <div class="row">
+            <div class="col-lg-9 center">
+                    <div class="news">
+                        <div class="row">
+                            <div class="col-md-12 table-responsive">
+                                <h4 style="padding:20px; border: 2px solid red; margin-top: 5px; text-align: center; background: #c9def2">Past Presidents</h4>
+                                <div class="row">
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Late Dr. Quazi Motahar Hussain</b></span><br><span>From 1974 to 1981</span>" href="https://bdchessfed.com//public/storage/images/committees/late_dr._quazi_motahar_hussain,_president_of_bangladesh_chess_federation_from_1974_to_1981_1624514377.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/late_dr._quazi_motahar_hussain,_president_of_bangladesh_chess_federation_from_1974_to_1981_1624514377.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Late Dr. Quazi Motahar Hussain</b></span><br><span class="text-danger">From 1974 to 1981</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Late Dr. Fazlul Karim</b></span><br><span>From 1981 to 1987</span>" href="https://bdchessfed.com//public/storage/images/committees/late_dr._fazlul_karim,_president_of_bangladesh_chess_federation_from_1981-1987_1624514425.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/late_dr._fazlul_karim,_president_of_bangladesh_chess_federation_from_1981-1987_1624514425.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Late Dr. Fazlul Karim</b></span><br><span class="text-danger">From 1981 to 1987</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Late Mr. Nasim Uddin Ahmed</b></span><br><span>From 1987 to 1997</span>" href="https://bdchessfed.com//public/storage/images/committees/late_mr._nasim_uddin_ahmed,_president_of_bangladesh_chess_federation_from_1987_to_1997_1624514465.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/late_mr._nasim_uddin_ahmed,_president_of_bangladesh_chess_federation_from_1987_to_1997_1624514465.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Late Mr. Nasim Uddin Ahmed</b></span><br><span class="text-danger">From 1987 to 1997</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Youssuf Abdullah Harun</b></span><br><span>From 1997 to 1997</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._youssuf_abdullah_harun_president_of_bangladesh_chess_federation_from_1997_to_1997_1624514534.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._youssuf_abdullah_harun_president_of_bangladesh_chess_federation_from_1997_to_1997_1624514534.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Youssuf Abdullah Harun</b></span><br><span class="text-danger">From 1997 to 1997</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Late Dr. Mostafa Chowdhury</b></span><br><span>From 1997 to 2001</span>" href="https://bdchessfed.com//public/storage/images/committees/late_dr._mostafa_chowdhury_president_of_bangladesh_chess_federation_from_1997-2001_1624514617.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/late_dr._mostafa_chowdhury_president_of_bangladesh_chess_federation_from_1997-2001_1624514617.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Late Dr. Mostafa Chowdhury</b></span><br><span class="text-danger">From 1997 to 2001</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Zakir Ahmed Khan</b></span><br><span>From 2002 to 2005</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._zakir_ahmed_khan_president_of_bangladesh_chess_federation_from_2002-2005_1624514643.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._zakir_ahmed_khan_president_of_bangladesh_chess_federation_from_2002-2005_1624514643.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Zakir Ahmed Khan</b></span><br><span class="text-danger">From 2002 to 2005</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Akhter Hossain Khan</b></span><br><span>From 2005 to 2006</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._akhter_hossain_khan_president_of_bangladesh_chess_federation_from_2005-2006_1624514677.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._akhter_hossain_khan_president_of_bangladesh_chess_federation_from_2005-2006_1624514677.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Akhter Hossain Khan</b></span><br><span class="text-danger">From 2005 to 2006</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Syed Shujauddin Ahmed</b></span><br><span>From 2006 to 2006</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._syed_shujauddin_ahmed_president_of_bangladesh_chess_federation_from_2006-2006_1624514713.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._syed_shujauddin_ahmed_president_of_bangladesh_chess_federation_from_2006-2006_1624514713.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Syed Shujauddin Ahmed</b></span><br><span class="text-danger">From 2006 to 2006</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Rafiqul Islam</b></span><br><span>From 2006 to 2007</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._rafiqul_islam_president_of_bangladesh_chess_federation_from_2006-2007_1624514742.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._rafiqul_islam_president_of_bangladesh_chess_federation_from_2006-2007_1624514742.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Rafiqul Islam</b></span><br><span class="text-danger">From 2006 to 2007</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Dr. Nasir Uddin Ahmed</b></span><br><span>From 2009 to 2010</span>" href="https://bdchessfed.com//public/storage/images/committees/dr._nasir_uddin_ahmed_president_of_bangladesh_chess_federation_from_2009-2010_1624514826.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/dr._nasir_uddin_ahmed_president_of_bangladesh_chess_federation_from_2009-2010_1624514826.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Dr. Nasir Uddin Ahmed</b></span><br><span class="text-danger">From 2009 to 2010</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Abdus Salam Khan</b></span><br><span>From 2007 to 2009</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._abdus_salam_khan_president_of_bangladesh_chess_federation_from_2007-2009_1624514773.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._abdus_salam_khan_president_of_bangladesh_chess_federation_from_2007-2009_1624514773.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Abdus Salam Khan</b></span><br><span class="text-danger">From 2007 to 2009</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Muhammad Zamir</b></span><br><span>From 2010 to 2010</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._muhammad_zamir_president_of_bangladesh_chess_federation_from_2010-2010_1624514854.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._muhammad_zamir_president_of_bangladesh_chess_federation_from_2010-2010_1624514854.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Muhammad Zamir</b></span><br><span class="text-danger">From 2010 to 2010</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:20px;">
+                                        <figure class="figure text-center" style="width:100%;">
+                                            <a data-fancybox="gallery" data-caption="<span><b>Mr. Gulam Mohammad Quader</b></span><br><span>From 2010 to 2014</span>" href="https://bdchessfed.com//public/storage/images/committees/mr._gulam_mohammad_quader_president_of_bangladesh_chess_federation_from_2010-2014_1624514879.jpg"><img src="https://bdchessfed.com//public/storage/images/committees/mr._gulam_mohammad_quader_president_of_bangladesh_chess_federation_from_2010-2014_1624514879.jpg" style="height: 250px; width:auto;  max-width: 200px;" ></a>                                            <figcaption class="figure-caption"><span><b>Mr. Gulam Mohammad Quader</b></span><br><span class="text-danger">From 2010 to 2014</span></figcaption>
+                                        </figure>
+                                    </div>
+                                                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 right">
+            <div class="header-event" style="">
+                    <h6>Top News</h6>
+                </div>
+                <div style="background-color: white; margin-bottom: 20px;">
+                    <table class="table table-hover table-active top-news-content">
+                        <tbody>
+                                                    <tr>
+                                <td>
+                                    <div><img alt="" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_82499530434_1637159693.jpg" style="height:531px; width:502px" /><br></div>
+                                    <div><a href="https://bdchessfed.com/press-release/35"><span style="text-align: justify !important; font-size:14px;">Tournament Calender</span></a></div>
+                                    <div style="text-align: right; font-size:11px;" class="text-danger">17, November 2021</div>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>
+                                    <div><img alt="" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_28529532840_1636631804.JPG" style="height:267px; width:800px" /><br></div>
+                                    <div><a href="https://bdchessfed.com/press-release/34"><span style="text-align: justify !important; font-size:14px;">Asian Club Cup Hybrid Chess Championship 2021</span></a></div>
+                                    <div style="text-align: right; font-size:11px;" class="text-danger">11, November 2021</div>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>
+                                    <div><img alt="" src="https://scontent.fcgp17-1.fna.fbcdn.net/v/t39.30808-6/255040093_4845680942132976_236769385498150981_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=730e14&amp;_nc_eui2=AeHYqiu0PNonP-oSDoN19VLx9U7sKQnOV2L1TuwpCc5XYv-ZzwOa2HAcSmUJ0mkktpQkCs3OlERQBCApSsjWObsj&amp;_nc_ohc=Fz6ZdNYoVN4AX-W0PzW&amp;_nc_ht=scontent.fcgp17-1.fna&amp;oh=eca64e5eb84c7312b7b9d395002ca2c8&amp;oe=618F4BAC" style="height:268px; width:800px" /><br></div>
+                                    <div><a href="https://bdchessfed.com/press-release/31"><span style="text-align: justify !important; font-size:14px;">Asian Club Cup Hybrid Chess Championship 2021</span></a></div>
+                                    <div style="text-align: right; font-size:11px;" class="text-danger">09, November 2021</div>
+                                </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+            
+
+                                            <div class="header-event" style="">
+                    <h6 style="font-size: 20px;">Live Game Links</h6>
+                </div>
+                <div style="background-color: white; margin-bottom: 20px;">
+                    <table class="table table-hover table-active">
+                        <tbody>
+                                                    <tr>
+                                <td><a href="https://live.followchess.com/#!asian-academies-hybrid-chp-2021">Asian Academies Hybrid Chess Championship  (Follow Chess)</a></td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+                
+                                    <div class="header-event" style="">
+                        <h6 style="font-size: 20px;">Upcoming Tournaments</h6>
+                    </div>
+                    <div style="background-color: white; margin-bottom: 20px;">
+                        <table class="table table-hover table-active">
+                            <tbody>
+                                                            <tr>
+                                    <td><a href="https://bdchessfed.com/tournament/8">Asian Chess Academy Hybrid Chess</a></td>
+                                </tr>
+                                                            <tr>
+                                    <td><a href="https://bdchessfed.com/tournament/9">National Youth Chess 2021, U-8,10,12,14,16,18</a></td>
+                                </tr>
+                                                            <tr>
+                                    <td><a href="https://bdchessfed.com/tournament/10">National Junior Chess 2021, U-20</a></td>
+                                </tr>
+                                                            <tr>
+                                    <td><a href="https://bdchessfed.com/tournament/11">National B Chess Championship</a></td>
+                                </tr>
+                                                            <tr>
+                                    <td><a href="https://bdchessfed.com/tournament/12">2nd Division Women’s Chess League</a></td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fbangladeshchessfederation&amp;width=275&amp;height&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=562902770395274" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:auto; width:100%;" allowtransparency="true"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!---Event start-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--Footer-->
+<div class="footer container">
+    <p> © Bangladesh Chess Federation</p>
+</div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://bdchessfed.com//public/gallery/jquery.fancybox.min.js"></script>
+
+    <script>
+
+</script>
+    <script>
+
+</script>
+    
+</body>
 </html>
