@@ -117,6 +117,22 @@
         .md-mon{
             display:block;
         }
+        .bigscn{
+            display: none;
+        }
+        .bigs{
+            display: block;
+        }
+        
+    }
+    @media screen and (max-width:900px) {
+
+        .bigscn{
+            display: block;
+        }
+        .bigs{
+            display: none;
+        }
     }
 
 </style>
@@ -128,8 +144,8 @@
 
 
 </head>
-<body>
-    <section style="background-color: #023270;">
+<body style="overflow-x: hidden;">
+    <section class="bigs" style="background-color: #023270;">
     <div class="container">
 
     <div class="row">
@@ -141,7 +157,11 @@
 </section>
 
     <div class="container head">
-    
+        <div class="row bigscn">
+            <div class="col-lg-12 col-md-12 col-sm-12 img">
+               <a href="https://bdchessfed.com"> <img src="https://bdchessfed.com//public/images/defaults/header_image.jpeg" alt=""></a>
+            </div>
+        </div>
     <nav class="navbar navbar-expand-md ">
         <a href="https://bdchessfed.com">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -232,7 +252,7 @@
     </nav>
 </div>
             <div class="container slider">
-        <div class="row">
+        <div class="row" style="background: url(https://www.ukrchess.org.ua/newstyle/images/fon_150.png);">
             <div class="col-lg-3 col-md-6 col-sm-12  left lg-mon md-mon">
                 <div class="header">
                     <h6>Ranking</h6>
@@ -449,7 +469,7 @@
 
 
             </div>
-            <div class="col-lg-9 center">
+            <div class="col-lg-6 center">
                 <div class="header">
                     <h6>Top News</h6>
                 </div>
@@ -743,7 +763,7 @@ October,2021 - February, 2022
                 
                 
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 right" style="display: none;">
+            <div class="col-lg-3 col-md-6 col-sm-12 right">
             <div class="header-event" style="">
                     <h6>Other News</h6>
                 </div>
