@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
 <link rel="icon" href="https://bdchessfed.com//public/images/logos/chess_logo.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
 
 <!-- CSRF Token -->
 <meta name="csrf-token" content="dZw3ZkZSCJrZIftaz6jXdo2t5e4OP1djC566J11X">
@@ -152,11 +154,12 @@
     }
     .card-body{
         background:#023270;
-        border-radius: 10px !important;
+        padding: 10px;
     }
     .card-text{
         color: #fff;
         text-align:center;
+        font-size: 70%;
     }
     .text-small{
         color:white;
@@ -167,6 +170,19 @@
     .card{
         background-color:#c9def2 !important;
         border: 1px solid rgb(201 222 242) !important;
+    }
+    .imagesize{
+        height: 100px;
+        width: 193px;
+    }
+
+    .card-deck{
+        margin-left: -7px !important;
+        margin-right: -4px !important;
+    }
+    .card-deck .card{
+        margin-left: 7px !important;
+        margin-right: 2px !important;
     }
 
 </style>
@@ -286,12 +302,13 @@
     </nav>
 
 
-        <div class="card-deck" style="padding: 6px">
+        <div class="card-deck" style="padding: 5px 0">
   <div class="card">
     
     <div class="card-body">
-      <h6 class="card-title">Other News</h6>
-      <a href="https://bdchessfed.com/press-release/33">
+    <a href="https://bdchessfed.com/press-release/33">
+      <img class="imagesize" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_32038841017_1638180516.jpeg"  />
+      
       <p class="card-text">Asian Club Cup Hybrid Chess Championship 2021</p></a>
       <p class="card-text"><small class="text-small">November 8, 2021</small></p>
     </div>
@@ -299,9 +316,8 @@
   <div class="card">
     
     <div class="card-body">
-      <h6 class="card-title">Other News</h6>
-      <!--<img src="https://bdchessfed.com//public/storage/images/ckeditor/ck_38486443069_1636276821.JPG" style="width:8rem; height:5rem"  />-->
       <a href="https://bdchessfed.com/press-release/30">
+          <img class="imagesize" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_38486443069_1636276821.JPG"  />
       <p class="card-text">Mujib Borsho FIDE Rating Chess Tournament 2021</p></a>
       <p class="card-text"><small class="text-small">November 7, 2021</small></p>
     </div>
@@ -309,8 +325,8 @@
   <div class="card">
     
     <div class="card-body">
-      <h6 class="card-title">Other News</h6>
       <a href="https://bdchessfed.com/press-release/29">
+          <img class="imagesize" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_88442135978_1636276692.JPG"/>
       <p class="card-text">Asian Club Cup Hybrid Chess Championship 2021</p></a>
       <p class="card-text"><small class="text-small">November 6, 2021</small></p>
     </div>
@@ -318,8 +334,8 @@
   <div class="card">
     
     <div class="card-body">
-      <h6 class="card-title">Other News</h6>
       <a href="https://bdchessfed.com/press-release/28">
+          <img class="imagesize" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_28529532840_1636631804.JPG"/>
       <p class="card-text">Asian Club Cup Hybrid Chess Championship 2021</p></a>
       <p class="card-text"><small class="text-small">November 5, 2021</small></p>
     </div>
@@ -327,8 +343,8 @@
   <div class="card">
     
     <div class="card-body">
-      <h6 class="card-title">Other News</h6>
       <a href="https://bdchessfed.com/press-release/26">
+          <img class="imagesize" src="https://bdchessfed.com//public/storage/images/ckeditor/ck_82313627699_1638180569.jpeg"/>
       <p class="card-text">Asian Club Cup Hybrid Chess Championship 2021</p></a>
       <p class="card-text"><small class="text-small">November 4, 2021</small></p>
     </div>
